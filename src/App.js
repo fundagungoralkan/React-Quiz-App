@@ -1,11 +1,15 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Routes} from 'react-router-dom';
+
 import Introduce from './pages/introduce/Introduce';
+
+
 import Quiz from './pages/quiz/Quiz';
+
 
 function App() {
   return (
-    <div className="" >
+    <div>
      <Router>
       <Routes>
         <Route path='/' element={<Introduce/>}/>
@@ -15,5 +19,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
