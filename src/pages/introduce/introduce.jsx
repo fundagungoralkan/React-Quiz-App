@@ -12,6 +12,7 @@ return(
    <div className='introduce-container'>
    <img src="https://img.freepik.com/premium-vector/quiz-logo-with-speech-bubble-icon_149152-812.jpg" alt=""/>
    <Dropdown/>
+   <div className='introduce-btn'>Quiz'e Bașla</div>
    </div>
     </div>
 );
