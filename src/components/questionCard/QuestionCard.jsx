@@ -17,8 +17,9 @@ const approvedChoice = (e) =>{
 
 return(
     <div className='questionCard'>
-     
-     <div>{count+1}/10 - {questionsData[count]?.question}</div>
+
+     <div className='questionCard-timer'>{timer}</div>
+     <div className='questionCard-title'>{count+1}/10 - {questionsData[count]?.question}</div>
         {
             questionsData[count]?.answers?.map((answer,i) => (
 
