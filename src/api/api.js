@@ -29,6 +29,6 @@ export const fetchQuizData = async (difficulty, amount) => {
         }));
     } catch (error) {
         console.error('Failed to fetch quiz data:', error.message);
-        return [];  // Hata durumunda boş bir dizi döndür
+        return []; 
     }
 }

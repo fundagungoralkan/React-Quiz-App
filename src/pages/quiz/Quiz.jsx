@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 import * as api from '../../api/api'
 import './Quiz.css'
 import QuestionCard from '../../components/questionCard/QuestionCard'
-import Modal from '../../components/modal/Modal'; // Modal bileşenini import edin
+import Modal from '../../components/modal/Modal'; 
 
 
 const Quiz = () => {
@@ -18,7 +18,7 @@ const [modal,setModal] = useState(false)
 useEffect(() => {
     const getData = async () => {
         const data = await api.fetchQuizData(difficulty, amount);
-        console.log(data); // API'den gelen verileri kontrol etmek için konsola yazdırın
+        console.log(data); 
         setQuestionsData(data);
     };
     getData();
